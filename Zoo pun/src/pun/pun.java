@@ -3,14 +3,17 @@ import java.applet.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.plaf.PanelUI;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.Panel;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,13 +23,14 @@ import java.awt.Color;
 import java.io.File;
 import java.io.IOException;
 
-public class pun<DrawPanel> extends Applet
+public class pun<DrawPanel> extends  Applet 
 {
-	
+	private JButton reg;
+	private JButton custom;
 	JFrame frame;
 	Image horsetrace;
 	DrawPanel drawPanel;
-	int imgn=1;
+	int imgn=1; 
 	int x = 0;
 	int y = 0;
 	int width = 0;
@@ -50,13 +54,44 @@ public class pun<DrawPanel> extends Applet
 		{
 			//g.drawImage(horsetrace, 0,0, this);
 			
-			//int width = horsetrace.getWidth(this);
-			//int height = horsetrace.getHeight(this);
+			int width = horsetrace.getWidth(this);
+			int height = horsetrace.getHeight(this);
 			
-			//g.drawImage(horsetrace, 50,50, width/2,height/2, this);
-			g.drawImage(horsetrace, 0, 0, null);
+			g.drawImage(horsetrace, 0,0, width/2,height/2, this);
+			//g.drawImage(horsetrace, 0, 0, null);
 		}
 		
+		public pun (){
+			super();
+			setLayout (new FlowLayout());
+			
+			reg = new JButton ("Bear");
+			add(reg);
+			
+			Icon b = new ImageIcon(getClass().getResource("bear.png"));
+			Icon c = new ImageIcon(getClass().getResource("jellyfish.png"));
+			custom = new JButton ("custom", b);
+			custom.setRolloverIcon(c);
+			add(custom);
+		
+	
+		//public static void main (String[] args){
+			
+		//	JFrame frame = new JFrame("Test");
+			//frame.setVisible(true);
+			//frame.setSize(200,200);
+			//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			
+	//	reg = new JButton("Bear");
+	//	addJButton;
+		
+		
+			
+			
+			
+			
+			
+		}
 		
 		
 		
@@ -105,3 +140,7 @@ public class pun<DrawPanel> extends Applet
 	//		setVisible(true);
 	
 		}
+
+	
+	
+
