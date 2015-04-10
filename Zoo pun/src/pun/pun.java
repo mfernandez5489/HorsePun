@@ -37,6 +37,7 @@ public class pun<DrawPanel> extends  Applet
 	int height = 0;
 	public void init()
 	{
+		
 		  try {                
 	          horsetrace = ImageIO.read(new File("horsetraced.png"));
 	          System.out.println("got it bro");
