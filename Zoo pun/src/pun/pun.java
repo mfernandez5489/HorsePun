@@ -8,6 +8,7 @@ import javax.swing.plaf.PanelUI;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.EventQueue;
 import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.Graphics;
@@ -62,18 +63,56 @@ public class pun<DrawPanel> extends  Applet
 			//g.drawImage(horsetrace, 0, 0, null);
 		}
 		
-		public pun (){
-			super();
-			setLayout (new FlowLayout());
+		public static class Class1 {
+
+			private JFrame frmClass;
+
+			/**
+			 * Launch the application.
+			 */
+			public static void NewScreen() {
+				EventQueue.invokeLater(new Runnable() {
+					public void run() {
+						try {
+							Class1 window = new Class1();
+							window.frmClass.setVisible(true);
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+					}
+				});
+			}
+
+			/**
+			 * Create the application.
+			 */
+			public Class1() {
+				initialize();
+			}
+
+			/**
+			 * Initialize the contents of the frame.
+			 */
+			private void initialize() {
+				frmClass = new JFrame();
+				frmClass.setTitle("Class1");
+				frmClass.setBounds(100, 100, 450, 300);
+				frmClass.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frmClass.getContentPane().setLayout(null);
+				
+				JButton btnBear = new JButton("Bear");
+				btnBear.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent arg0) {
+					}
+				});
+				btnBear.setBounds(48, 39, 89, 23);
+				frmClass.getContentPane().add(btnBear);
+			}
+		}
+
 			
-			reg = new JButton ("Bear");
-			add(reg);
 			
-			Icon b = new ImageIcon(getClass().getResource("bear.png"));
-			Icon c = new ImageIcon(getClass().getResource("jellyfish.png"));
-			custom = new JButton ("custom", b);
-			custom.setRolloverIcon(c);
-			add(custom);
+
 		
 	
 		//public static void main (String[] args){
@@ -92,7 +131,7 @@ public class pun<DrawPanel> extends  Applet
 			
 			
 			
-		}
+		
 		
 		
 		
