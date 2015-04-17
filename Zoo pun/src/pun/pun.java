@@ -1,11 +1,18 @@
 package pun;
-import java.applet.*;
+import javax.swing.Icon;
+import javax.swing.JApplet;
+import javax.swing.JButton;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.plaf.PanelUI;
 
+import java.applet.Applet;
 import java.awt.BorderLayout;
+import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
@@ -26,32 +33,48 @@ import java.io.IOException;
 
 public class pun<DrawPanel> extends  Applet 
 {
-	private JButton reg;
-	private JButton custom;
-	JFrame frame;
+	
 	Image horsetrace;
 	DrawPanel drawPanel;
-	int imgn=1; 
+	int icon=1; 
 	int x = 0;
 	int y = 0;
-	int width = 0;
-	int height = 0;
+	int width = 20;
+	int height = 20;
 	public void init()
 	{
+		 JButton button1 = new JButton();
+		 button1.setLabel("Bear");
+		 ImageIcon icon = new ImageIcon("bear.png");
+		 add(button1);
+		 JButton button2 = new JButton();
+		 button2.setLabel("Penguin");
+		 ImageIcon icon1 = new ImageIcon("bear.png");
+		 add(button2);
+		 JButton button3 = new JButton();
+		 button3.setLabel("Bear");
+		 ImageIcon icon2 = new ImageIcon("bear.png");
+		 add(button3);
+		 JButton button4 = new JButton();
+		 button4.setLabel("Bear");
+		 ImageIcon icon3 = new ImageIcon("bear.png");
+		 add(button4);
+		 JButton button5 = new JButton();
+		 button5.setLabel("Bear");
+		 ImageIcon icon4 = new ImageIcon("bear.png");
+		 add(button5);
 		
 		  try {                
 	          horsetrace = ImageIO.read(new File("horsetraced.png"));
-	          System.out.println("got it bro");
+	          
 	       } catch (IOException ex) {
 	            // handle exception...
 	    	   System.out.println("You got an error" + ex);
 	       }
-		// TODO Auto-generated method stub
-		//g.setColor(Color.BLUE);
-		//g.fillRect(500,500,500,500);
-		//horsetrace=getImage(getDocumentBase(), "zoo.jpg");
+		  
+		 
 	}
-		
+		// TODO Auto-generated method stub
 		public void paint(Graphics g)
 		{
 			//g.drawImage(horsetrace, 0,0, this);
@@ -61,81 +84,13 @@ public class pun<DrawPanel> extends  Applet
 			
 			g.drawImage(horsetrace, 0,0, width/2,height/2, this);
 			//g.drawImage(horsetrace, 0, 0, null);
-		}
 		
-		public static class Class1 {
 
-			private JFrame frmClass;
-
-			/**
-			 * Launch the application.
-			 */
-			public static void NewScreen() {
-				EventQueue.invokeLater(new Runnable() {
-					public void run() {
-						try {
-							Class1 window = new Class1();
-							window.frmClass.setVisible(true);
-						} catch (Exception e) {
-							e.printStackTrace();
-						}
-					}
-				});
-			}
-
-			/**
-			 * Create the application.
-			 */
-			public Class1() {
-				initialize();
-			}
-
-			/**
-			 * Initialize the contents of the frame.
-			 */
-			private void initialize() {
-				frmClass = new JFrame();
-				frmClass.setTitle("Class1");
-				frmClass.setBounds(100, 100, 450, 300);
-				frmClass.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				frmClass.getContentPane().setLayout(null);
-				
-				JButton btnBear = new JButton("Bear");
-				btnBear.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent arg0) {
-					}
-				});
-				btnBear.setBounds(48, 39, 89, 23);
-				frmClass.getContentPane().add(btnBear);
-			}
 		}
-
-			
-			
-
-		
 	
-		//public static void main (String[] args){
-			
-		//	JFrame frame = new JFrame("Test");
-			//frame.setVisible(true);
-			//frame.setSize(200,200);
-			//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			
-	//	reg = new JButton("Bear");
-	//	addJButton;
-		
-		
-			
-			
-			
-			
-			
-		
-		
-		
-		
-		
+
+}
+
 		
 		//if (x <= 0 - width) {
 			//if(imgn==1){
@@ -179,7 +134,7 @@ public class pun<DrawPanel> extends  Applet
 	//		setEnabled(true);
 	//		setVisible(true);
 	
-		}
+		
 
 	
 	
