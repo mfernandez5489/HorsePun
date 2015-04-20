@@ -1,4 +1,5 @@
 package pun;
+import javax.swing.ButtonModel;
 import javax.swing.Icon;
 import javax.swing.JApplet;
 import javax.swing.JButton;
@@ -44,22 +45,28 @@ public class pun<DrawPanel> extends  Applet
 	public void init()
 	{
 		 JButton button1 = new JButton(new ImageIcon("bear.png"));
-			  
-		 JButton button2 = new JButton();
-		 button2.setLabel("Penguin");
 		 ImageIcon icon1 = new ImageIcon("bear.png");
-		 add(button2);
-		 JButton button3 = new JButton();
-		 button3.setLabel("Sponge");
+		 
+		 
+		 JButton button2 = new JButton();
 		 ImageIcon icon2 = new ImageIcon("bear.png");
-		 add(button3);
-		 JButton button4 = new JButton();
-		 button4.setLabel("Stingray");
+		 	button2.setIcon((Icon) icon2);
+		 		add(button2);
+		 		
+		 		
+		 JButton button3 = new JButton();
 		 ImageIcon icon3 = new ImageIcon("bear.png");
-		 add(button4);
+		 	button3.setLabel("Sponge");
+		 		add(button3);
+		 		
+		 		
+		 JButton button4 = new JButton();
+		 	button4.setLabel("Stingray");
+		 		add(button4);
+		 			ImageIcon icon4 = new ImageIcon("bear.png");
 		 JButton button5 = new JButton();
 		 button5.setLabel("nahrwhale");
-		 ImageIcon icon4 = new ImageIcon("bear.png");
+		 
 		 add(button5);
 		 JButton button6 = new JButton();
 		 button6.setLabel("pig");
