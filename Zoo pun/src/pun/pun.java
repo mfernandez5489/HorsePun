@@ -43,10 +43,8 @@ public class pun<DrawPanel> extends  Applet
 	int height = 20;
 	public void init()
 	{
-		 JButton button1 = new JButton();
-		 button1.setLabel("Bear");
-		 ImageIcon icon = new ImageIcon("bear.png");
-		 add(button1);
+		 JButton button1 = new JButton(new ImageIcon("bear.png"));
+			  
 		 JButton button2 = new JButton();
 		 button2.setLabel("Penguin");
 		 ImageIcon icon1 = new ImageIcon("bear.png");
@@ -60,21 +58,58 @@ public class pun<DrawPanel> extends  Applet
 		 ImageIcon icon3 = new ImageIcon("bear.png");
 		 add(button4);
 		 JButton button5 = new JButton();
-		 button5.setLabel("Jellyfish");
+		 button5.setLabel("nahrwhale");
 		 ImageIcon icon4 = new ImageIcon("bear.png");
 		 add(button5);
+		 JButton button6 = new JButton();
+		 button6.setLabel("pig");
+		 ImageIcon icon5 = new ImageIcon("bear.png");
+		 add(button6);
+		 JButton button7 = new JButton();
+		 button7.setLabel("shark");
+		 ImageIcon icon6 = new ImageIcon("bear.png");
+		 add(button7);
+		 JButton button8 = new JButton();
+		 button8.setLabel("Dinosaur");
+		 ImageIcon icon7 = new ImageIcon("bear.png");
+		 add(button8);
+		 JButton button9 = new JButton();
+		 button9.setLabel("Hippo");
+		 ImageIcon icon8 = new ImageIcon("bear.png");
+		 add(button9);
+		 JButton button10 = new JButton();
+		 button10.setLabel("jellyfish");
+		 ImageIcon icon9 = new ImageIcon("bear.png");
+		 add(button10);
+		 JButton button11 = new JButton();
+		 button11.setLabel("jellyfish2");
+		 ImageIcon icon10 = new ImageIcon("bear.png");
+		 add(button11);
+		 JButton button12 = new JButton();
+		 button12.setLabel("Koala");
+		 ImageIcon icon11 = new ImageIcon("bear.png");
+		 add(button12);
+		 JButton button13 = new JButton();
+		 button13.setLabel("Penguin2");
+		 ImageIcon icon12 = new ImageIcon("bear.png");
+		 add(button13);
+		 JButton button14 = new JButton();
+		 button14.setLabel("Puma");
+		 ImageIcon icon13 = new ImageIcon("bear.png");
+		 add(button14);
+		 
 		 
 		
 		  try {                
 	          horsetrace = ImageIO.read(new File("horsetraced.png"));
 	          
-	       } catch (IOException ex) {
+	       } catch (IOException ex1) {
 	            // handle exception...
-	    	   System.out.println("You got an error" + ex);
+	    	   System.out.println("You got an error" + ex1);
 	       }
-		  
+			  }
 		 
-	}
+	
 		// TODO Auto-generated method stub
 		public void paint(Graphics g)
 		{
