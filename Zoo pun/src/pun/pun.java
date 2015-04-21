@@ -50,60 +50,70 @@ public class pun<DrawPanel> extends  Applet
 	 		add(button1);
 		 
 		 JButton button2 = new JButton(new ImageIcon("stingray.png"));
-		 ImageIcon icon2 = new ImageIcon("stingray");
+		 ImageIcon icon2 = new ImageIcon("stingray.png");
 		 	button2.setIcon((Icon) icon2);
 		 		add(button2);
 		 		
 		 		
-		 JButton button3 = new JButton();
-		 ImageIcon icon3 = new ImageIcon("bear.png");
-		 	button3.setLabel("Sponge");
+		 JButton button3 = new JButton(new ImageIcon("dinosoar.png"));
+		 ImageIcon icon3 = new ImageIcon("dinosoar.png");
+		 button1.setIcon((Icon) icon1);
 		 		add(button3);
 		 		
 		 		
-		 JButton button4 = new JButton();
-		 	button4.setLabel("Stingray");
+		 JButton button4 = new JButton(new ImageIcon("hippo.png"));
+		 ImageIcon icon4 = new ImageIcon("hippo.png");
+		 button1.setIcon((Icon) icon1);
 		 		add(button4);
-		 			ImageIcon icon4 = new ImageIcon("bear.png");
-		 JButton button5 = new JButton();
-		 button5.setLabel("nahrwhale");
-		 
+		 			
+		 JButton button5 = new JButton(new ImageIcon("jellyfish.png"));
+		 ImageIcon icon5 = new ImageIcon("jellyfish.png");
+		 button1.setIcon((Icon) icon1);
 		 add(button5);
-		 JButton button6 = new JButton();
-		 button6.setLabel("pig");
-		 ImageIcon icon5 = new ImageIcon("bear.png");
+		 
+		 JButton button6 = new JButton(new ImageIcon("jellyfish2.png"));
+		 button1.setIcon((Icon) icon1);
+		 ImageIcon icon6 = new ImageIcon("jellyfish2.png");
 		 add(button6);
-		 JButton button7 = new JButton();
-		 button7.setLabel("shark");
-		 ImageIcon icon6 = new ImageIcon("bear.png");
+		 
+		 JButton button7 = new JButton(new ImageIcon("koala.png"));
+		 button1.setIcon((Icon) icon1);
+		 ImageIcon icon7 = new ImageIcon("koala.png");
 		 add(button7);
-		 JButton button8 = new JButton();
-		 button8.setLabel("Dinosaur");
-		 ImageIcon icon7 = new ImageIcon("bear.png");
+		 
+		 JButton button8 = new JButton(new ImageIcon("nahrwhal.png"));
+		 button1.setIcon((Icon) icon1);
+		 ImageIcon icon8 = new ImageIcon("nahrwhal.png");
 		 add(button8);
-		 JButton button9 = new JButton();
-		 button9.setLabel("Hippo");
-		 ImageIcon icon8 = new ImageIcon("bear.png");
+		 
+		 JButton button9 = new JButton(new ImageIcon("penguin.png"));
+		 button1.setIcon((Icon) icon1);
+		 ImageIcon icon9 = new ImageIcon("penguin.png");
 		 add(button9);
-		 JButton button10 = new JButton();
-		 button10.setLabel("jellyfish");
-		 ImageIcon icon9 = new ImageIcon("bear.png");
+		 
+		 JButton button10 = new JButton(new ImageIcon("penguin2.png"));
+		 button1.setIcon((Icon) icon1);
+		 ImageIcon icon10 = new ImageIcon("penguin2.png");
 		 add(button10);
-		 JButton button11 = new JButton();
-		 button11.setLabel("jellyfish2");
-		 ImageIcon icon10 = new ImageIcon("bear.png");
+		 
+		 JButton button11 = new JButton(new ImageIcon("pig.png"));
+		 button1.setIcon((Icon) icon1);
+		 ImageIcon icon11 = new ImageIcon("pig.png");
 		 add(button11);
-		 JButton button12 = new JButton();
-		 button12.setLabel("Koala");
-		 ImageIcon icon11 = new ImageIcon("bear.png");
+		 
+		 JButton button12 = new JButton(new ImageIcon("puma.png"));
+		 button1.setIcon((Icon) icon1);
+		 ImageIcon icon12 = new ImageIcon("puma.png");
 		 add(button12);
-		 JButton button13 = new JButton();
-		 button13.setLabel("Penguin2");
-		 ImageIcon icon12 = new ImageIcon("bear.png");
+		 
+		 JButton button13 = new JButton(new ImageIcon("shark.png"));
+		 button1.setIcon((Icon) icon1);
+		 ImageIcon icon13 = new ImageIcon("shark.png");
 		 add(button13);
-		 JButton button14 = new JButton();
-		 button14.setLabel("Puma");
-		 ImageIcon icon13 = new ImageIcon("bear.png");
+		 
+		 JButton button14 = new JButton(new ImageIcon("spongs.png"));
+		 button1.setIcon((Icon) icon1);
+		 ImageIcon icon14 = new ImageIcon("spongs.png");
 		 add(button14);
 		 
 		 
