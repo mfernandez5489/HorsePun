@@ -46,10 +46,11 @@ public class pun<DrawPanel> extends  Applet
 	{
 		 JButton button1 = new JButton(new ImageIcon("bear.png"));
 		 ImageIcon icon1 = new ImageIcon("bear.png");
+		 button1.setIcon((Icon) icon1);
+	 		add(button1);
 		 
-		 
-		 JButton button2 = new JButton();
-		 ImageIcon icon2 = new ImageIcon("bear.png");
+		 JButton button2 = new JButton(new ImageIcon("stingray.png"));
+		 ImageIcon icon2 = new ImageIcon("stingray");
 		 	button2.setIcon((Icon) icon2);
 		 		add(button2);
 		 		
